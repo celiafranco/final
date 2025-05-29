@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celia ej16</title>
+ <style>
+    *{box-sizing: border-box;}
+        body{ display: grid; grid-template-columns: 33.3vw 33.3vw 33.3vw; grid-template-rows: 20vh 40vh 80vh 40vh; justify-content: center;}
+        #cabecera{background-color: deeppink; grid-column: 1/3; margin: 10px; text-align: center; overflow: hidden;}
+        #menu{background-color: mistyrose;  margin: 10px;}
+        #enlaces{ background-color: hotpink; margin: 10px; overflow: hidden;}
+        #enlaces:hover {transform: scale(60%);}
+        #contenido{ background-color: lightpink; margin: 10px; overflow: hidden;}
+        #contenido2{ background-color: fuchsia; margin: 10px; overflow: hidden;}
+        #contenido3{padding: 10%; background-color: violet; margin: 10px; text-align: center;}
+        #pie{background-color: mediumvioletred; grid-column: 2/4; margin: 10px; overflow: hidden;}
+        #final{padding: 3%; background-color: lightcoral; grid-column: 1/4; margin: 10px;}
+        #s, #l, #t{height:100%;width: 100%; object-fit: cover;}
+        
+        @media(max-width:800px){
+            body{grid-template-rows: 20vh 40vh;}
+            #contenido{ grid-column: 1/2;}
+            #contenido3{ grid-column: 1/2;} 
+            #menu{grid-column: 1/2;}
+            #pie{grid-column: 2/3;}
+            #final{grid-column: 1/3;}
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecera"> <h1> Comida gallega </h1> </div>
+    <div id="menu"> <b></b></div>
+    <div id="enlaces"> <a href=" https://www.abc.es/recetasderechupete/receta-de-pulpo-a-la-gallega-con-patatas/1015/"><img id="s" src="https://www.tuscasasrurales.com/blog/wp-content/uploads/2019/12/pulpo-a-feira.jpg"></a>
+    </div>
+    <div id="contenido"> <ul>
+            <li>El Caldo Gallego.</li>
+            <li>Pulpo A Feira.</li>
+            <li>Empanada Gallega.  </li>
+            <li>Marisco.</li>
+            <li>Ternera Gallega.</li>
+            <li>Pimientos del Padrón.</li>
+            <li>Cocido Gallego.</li>
+        </ul></div>
+    <div id="contenido2"> <img id="t" src="https://www.justspices.es/media/recipe/Pimientos_de_padron.webp"></div>
+    <div id="contenido3"><p>La comida de Galicia se refiere a la cocina tradicional y regional de la propia región de Galicia, una comunidad autónoma situada en el noroeste de España. La gastronomía gallega es conocida por su énfasis en ingredientes frescos y de alta calidad, así como por su relación con el mar y la tierra, dada la ubicación geográfica de la región.</p></div>
+    <div id="pie"> <img id="l" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Galicia.svg/2560px-Flag_of_Galicia.svg.png"></div>
+    <div id="final"><p> Info: </p>
+    <ul>
+        <li><a href="https://aspedrinasnovas.es/comida-galicia/">Características de la comida gallega.</a></li>
+        <li><a href="https://turismodevino.com/saber-de-vino/platos-y-gastronomia-tipica/platos-tipicos-de-galicia/">Comidas más típicas en Galicia.</a></li>
+    </ul></div>
+</body>
+</html>
